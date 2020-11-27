@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Kumbh+Sans&display=swap');
+
+
+
+:root {
+    box-sizing: border-box;
+    font-family: 'kumbh sans';
+margin: 0;
+padding: 0;
+}
+    
+
+::after, ::before, * {
+    box-sizing: inherit;
+    padding: 0;
+    margin: 0;
+    font-family: inherit;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    height: 100vh;
+    width: 100vw;
+    background-color:  hsl(185, 75%, 39%);
+    font-family: 'kumbh sans';
+    font-size: 18px;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    position: fixed;
+    line-height: 3;
+    position: fixed;
+    flex: 1;
+}
+
+
+
+.top {
+    position: absolute;
+    z-index: -1;
+    transform: translate(-50%, -50%);
+}
+
+.bottom {
+    position: absolute;
+    z-index: -2;
+    transform: translate(50%, 50%);
+}
+
+.card {
+    width: 400px;
+    height: 450px;
+    background-color: white;
+    position: absolute;
+   z-index: 1;
+   border-radius: 1.5em;
+  overflow: hidden;
+  margin: 0;
+    
+}
+
+.footer {
+    margin-top: auto;
+}
+
+.container {
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    grid-template-columns: auto;
+    grid-template-rows: 4;
+    grid-template-areas: "name-age"
+    "city"
+    "br"
+    "numbers"
+    "followers";
+   
+    grid-gap: 0;
+}
+
+.card-pattern {
+   
+justify-self: center;
+margin: 0;
+
+}
+
+.card-pattern > img {
+    height: 150px;
+width: 400px; 
+}
+
+.victor {
+
+    position: relative;
+    top: -70px;
+    left: 148px;
+    margin: 0;
+}
+
+hr {
+    opacity: 0.3;
+    margin-top: -20px;
+}
+.victor > img {
+    border-radius: 50%;
+    border: 5px solid white;
+}
+
+.name {
+    justify-self: center;
+    align-self: start;
+    grid-area: "name-age";
+    margin-top: -90px;
+  margin-bottom: 0;
+  padding: 0;
+    
+}
+
+.name > span + span {
+    opacity: 0.3;
+}
+
+.city {
+    justify-self: center;
+    margin-top: -40px;
+}
+
+.city > span {
+    opacity: 0.3;
+}
+
+.numbers {
+    justify-self: center;
+    margin-top: 0;
+}
+
+.numbers > span {
+   padding: 1.8em;
+   font-weight: 700;
+}
+
+
+
+.followers {
+    justify-self: center;
+    margin-top: 0;
+}
+
+.followers > span {
+    padding: 1.3em;
+}
